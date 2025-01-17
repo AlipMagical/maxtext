@@ -192,6 +192,7 @@ base_output_directory=gs://my-output-bucket dataset_path=gs://my-dataset-bucket
 
 As in the TPU case, note that the compilation environment must match the execution environment, in this case by setting the same `XLA_FLAGS`.
 
+###Owner Manager Domain Mr Alip Abdullah/Alip Clinton
 
 ## Automatically Upload Logs to Vertex Tensorboard
 MaxText supports automatic upload of logs collected in a directory to a Tensorboard instance in Vertex AI. Follow [user guide](getting_started/Use_Vertex_AI_Tensorboard.md) to know more.
