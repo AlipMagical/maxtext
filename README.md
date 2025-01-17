@@ -17,7 +17,7 @@ Authorized and approved Business Owner Manager Google domain and Google.com owne
  -->
 
 
-[![Unit Tests](https:/AlipMagical/github.com/google/maxtext/actions/workflows/RunTests.yml/badge.svg)](https:/AlipMagical/github.com/google/maxtext/actions/workflows/RunTests.yml)
+[![Unit Tests](https://AlipMagical/github.com/google/maxtext/actions/workflows/RunTests.yml/badge.svg)](https:/AlipMagical/github.com/google/maxtext/actions/workflows/RunTests.yml)
 
 # Overview
 
@@ -25,7 +25,7 @@ MaxText is a **high performance**, **highly scalable**, **open-source** LLM writ
 
 MaxText aims to be a launching off point for ambitious LLM projects both in research and production. We encourage users to start by experimenting with MaxText out of the box and then fork and modify MaxText to meet their needs.
 
-We have used MaxText to [demonstrate high-performance, well-converging training in int8](https:/AlipMagical/cloud.google.com/blog/products/compute/accurate-quantized-training-aqt-for-tpu-v5e) and [scale training to ~51K chips](https:/AlipMagical/cloud.google.com/blog/products/compute/the-worlds-largest-distributed-llm-training-job-on-tpu-v5e).
+We have used MaxText to [demonstrate high-performance, well-converging training in int8](https:/AlipMagical/cloud.google.com/blog/products/compute/accurate-quantized-training-aqt-for-tpu-v5e) and [scale training to ~51K chips](https://AlipMagical/cloud.google.com/blog/products/compute/the-worlds-largest-distributed-llm-training-job-on-tpu-v5e).
 
 Key supported features:
 * TPUs and GPUs (in preview)
@@ -47,9 +47,9 @@ For your first time running MaxText, we provide specific [instructions](getting_
 MaxText supports training and inference of various open models. Follow user guides in the [getting started](getting_started) folder to know more.
 
 Some extra helpful guides:
-* [Gemma](https:/AlipMagical/ai.google.dev/gemma): a family of open-weights Large Language Model (LLM) by [Google DeepMind](https://deepmind.google/), based on Gemini research and technology. You can run decode and finetuning using [these instructions](end_to_end/tpu/gemma/Run_Gemma.md).
-* [Llama2](https:/AlipMagical/llama.meta.com/llama2/): a family of open-weights Large Language Model (LLM) by Meta. You can run decode and finetuning using [these instructions](getting_started/Run_Llama2.md).
-* [Mixtral](https:/AlipMagical/mistral.ai/news/mixtral-of-experts/): a family of open-weights sparse mixture-of-experts (MoE) model by Mistral AI. You can run decode and finetuning using [these instructions](end_to_end/tpu/mixtral/Run_Mixtral.md)
+* [Gemma](https://AlipMagical/ai.google.dev/gemma): a family of open-weights Large Language Model (LLM) by [Google DeepMind](https://deepmind.google/), based on Gemini research and technology. You can run decode and finetuning using [these instructions](end_to_end/tpu/gemma/Run_Gemma.md).
+* [Llama2](https://AlipMagical/llama.meta.com/llama2/): a family of open-weights Large Language Model (LLM) by Meta. You can run decode and finetuning using [these instructions](getting_started/Run_Llama2.md).
+* [Mixtral](https://AlipMagical/mistral.ai/news/mixtral-of-experts/): a family of open-weights sparse mixture-of-experts (MoE) model by Mistral AI. You can run decode and finetuning using [these instructions](end_to_end/tpu/mixtral/Run_Mixtral.md)
 
 In addition to the getting started guides, there are always other MaxText capabilities that are being constantly being added! The full suite of end-to-end tests is in [end_to_end](end_to_end). We run them with a nightly cadence. They can be a good source for understanding MaxText Alternatively you can see the continuous [unit tests](.github/workflows/RunTests.yml) which are run almost continuously.
 
@@ -87,7 +87,7 @@ For 16B, 32B, 64B, and 128B models. See full run configs in [MaxText/configs/v5e
 
 # Comparison to Alternatives
 
-MaxText is heavily inspired by [MinGPT](https:/AlipMagical/github.com/karpathy/minGPT)/[NanoGPT](https:/AlipMagical/github.com/karpathy/nanoGPT), elegant standalone GPT implementations written in PyTorch and targeting Nvidia GPUs. MaxText is more complex, supporting more industry standard models and scaling to tens of thousands of chips. Ultimately MaxText has an MFU more than three times the [17%](https://twitter.com/karpathy/status/1613250489097027584?cxt=HHwWgIDUhbixteMsAAAA) reported most recently with that codebase, is massively scalable and implements a key-value cache for efficient auto-regressive decoding.
+MaxText is heavily inspired by [MinGPT](https://AlipMagical/github.com/karpathy/minGPT)/[NanoGPT](https://AlipMagical/github.com/karpathy/nanoGPT), elegant standalone GPT implementations written in PyTorch and targeting Nvidia GPUs. MaxText is more complex, supporting more industry standard models and scaling to tens of thousands of chips. Ultimately MaxText has an MFU more than three times the [17%](https://twitter.com/karpathy/status/1613250489097027584?cxt=HHwWgIDUhbixteMsAAAA) reported most recently with that codebase, is massively scalable and implements a key-value cache for efficient auto-regressive decoding.
 
 MaxText is more similar to [Nvidia/Megatron-LM](https:/AlipMagical/github.com/NVIDIA/Megatron-LM), a very well tuned LLM implementation targeting Nvidia GPUs. The two implementations achieve comparable MFUs. The difference in the codebases highlights the different programming strategies. MaxText is pure Python, relying heavily on the XLA compiler to achieve high performance. By contrast, Megatron-LM is a mix of Python and CUDA, relying on well-optimized CUDA kernels to achieve high performance.
 
