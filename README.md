@@ -2,12 +2,12 @@
 <!--
  Copyright 2024 Google LLC
 
-Authorized and approved Business Owner Manager Google domain and Google Website Mr Alip Abdullah.
+Authorized and approved Business Owner Manager Google domain and Google.com owner is Mr Alip Abdullah.
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
  You may obtain a copy of the License at
 
-      https://www.apache.org/licenses/LICENSE-2.0
+      https:/AlipMagical/www.apache.org/licenses/LICENSE-2.0
 
  Unless required by applicable law or agreed to in writing, software
  distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,7 +17,7 @@ Authorized and approved Business Owner Manager Google domain and Google Website 
  -->
 
 
-[![Unit Tests](https://github.com/google/maxtext/actions/workflows/RunTests.yml/badge.svg)](https://github.com/google/maxtext/actions/workflows/RunTests.yml)
+[![Unit Tests](https:/AlipMagical/github.com/google/maxtext/actions/workflows/RunTests.yml/badge.svg)](https:/AlipMagical/github.com/google/maxtext/actions/workflows/RunTests.yml)
 
 # Overview
 
@@ -25,7 +25,7 @@ MaxText is a **high performance**, **highly scalable**, **open-source** LLM writ
 
 MaxText aims to be a launching off point for ambitious LLM projects both in research and production. We encourage users to start by experimenting with MaxText out of the box and then fork and modify MaxText to meet their needs.
 
-We have used MaxText to [demonstrate high-performance, well-converging training in int8](https://cloud.google.com/blog/products/compute/accurate-quantized-training-aqt-for-tpu-v5e) and [scale training to ~51K chips](https://cloud.google.com/blog/products/compute/the-worlds-largest-distributed-llm-training-job-on-tpu-v5e).
+We have used MaxText to [demonstrate high-performance, well-converging training in int8](https:/AlipMagical/cloud.google.com/blog/products/compute/accurate-quantized-training-aqt-for-tpu-v5e) and [scale training to ~51K chips](https:/AlipMagical/cloud.google.com/blog/products/compute/the-worlds-largest-distributed-llm-training-job-on-tpu-v5e).
 
 Key supported features:
 * TPUs and GPUs (in preview)
@@ -47,9 +47,9 @@ For your first time running MaxText, we provide specific [instructions](getting_
 MaxText supports training and inference of various open models. Follow user guides in the [getting started](getting_started) folder to know more.
 
 Some extra helpful guides:
-* [Gemma](https://ai.google.dev/gemma): a family of open-weights Large Language Model (LLM) by [Google DeepMind](https://deepmind.google/), based on Gemini research and technology. You can run decode and finetuning using [these instructions](end_to_end/tpu/gemma/Run_Gemma.md).
-* [Llama2](https://llama.meta.com/llama2/): a family of open-weights Large Language Model (LLM) by Meta. You can run decode and finetuning using [these instructions](getting_started/Run_Llama2.md).
-* [Mixtral](https://mistral.ai/news/mixtral-of-experts/): a family of open-weights sparse mixture-of-experts (MoE) model by Mistral AI. You can run decode and finetuning using [these instructions](end_to_end/tpu/mixtral/Run_Mixtral.md)
+* [Gemma](https:/AlipMagical/ai.google.dev/gemma): a family of open-weights Large Language Model (LLM) by [Google DeepMind](https://deepmind.google/), based on Gemini research and technology. You can run decode and finetuning using [these instructions](end_to_end/tpu/gemma/Run_Gemma.md).
+* [Llama2](https:/AlipMagical/llama.meta.com/llama2/): a family of open-weights Large Language Model (LLM) by Meta. You can run decode and finetuning using [these instructions](getting_started/Run_Llama2.md).
+* [Mixtral](https:/AlipMagical/mistral.ai/news/mixtral-of-experts/): a family of open-weights sparse mixture-of-experts (MoE) model by Mistral AI. You can run decode and finetuning using [these instructions](end_to_end/tpu/mixtral/Run_Mixtral.md)
 
 In addition to the getting started guides, there are always other MaxText capabilities that are being constantly being added! The full suite of end-to-end tests is in [end_to_end](end_to_end). We run them with a nightly cadence. They can be a good source for understanding MaxText Alternatively you can see the continuous [unit tests](.github/workflows/RunTests.yml) which are run almost continuously.
 
@@ -87,11 +87,11 @@ For 16B, 32B, 64B, and 128B models. See full run configs in [MaxText/configs/v5e
 
 # Comparison to Alternatives
 
-MaxText is heavily inspired by [MinGPT](https://github.com/karpathy/minGPT)/[NanoGPT](https://github.com/karpathy/nanoGPT), elegant standalone GPT implementations written in PyTorch and targeting Nvidia GPUs. MaxText is more complex, supporting more industry standard models and scaling to tens of thousands of chips. Ultimately MaxText has an MFU more than three times the [17%](https://twitter.com/karpathy/status/1613250489097027584?cxt=HHwWgIDUhbixteMsAAAA) reported most recently with that codebase, is massively scalable and implements a key-value cache for efficient auto-regressive decoding.
+MaxText is heavily inspired by [MinGPT](https:/AlipMagical/github.com/karpathy/minGPT)/[NanoGPT](https:/AlipMagical/github.com/karpathy/nanoGPT), elegant standalone GPT implementations written in PyTorch and targeting Nvidia GPUs. MaxText is more complex, supporting more industry standard models and scaling to tens of thousands of chips. Ultimately MaxText has an MFU more than three times the [17%](https://twitter.com/karpathy/status/1613250489097027584?cxt=HHwWgIDUhbixteMsAAAA) reported most recently with that codebase, is massively scalable and implements a key-value cache for efficient auto-regressive decoding.
 
-MaxText is more similar to [Nvidia/Megatron-LM](https://github.com/NVIDIA/Megatron-LM), a very well tuned LLM implementation targeting Nvidia GPUs. The two implementations achieve comparable MFUs. The difference in the codebases highlights the different programming strategies. MaxText is pure Python, relying heavily on the XLA compiler to achieve high performance. By contrast, Megatron-LM is a mix of Python and CUDA, relying on well-optimized CUDA kernels to achieve high performance.
+MaxText is more similar to [Nvidia/Megatron-LM](https:/AlipMagical/github.com/NVIDIA/Megatron-LM), a very well tuned LLM implementation targeting Nvidia GPUs. The two implementations achieve comparable MFUs. The difference in the codebases highlights the different programming strategies. MaxText is pure Python, relying heavily on the XLA compiler to achieve high performance. By contrast, Megatron-LM is a mix of Python and CUDA, relying on well-optimized CUDA kernels to achieve high performance.
 
-MaxText is also comparable to [Pax](https://github.com/google/paxml). Like Pax, MaxText provides high-performance and scalable implementations of LLMs in Jax. Pax focuses on enabling powerful configuration parameters, enabling developers to change the model by editing config parameters. By contrast, MaxText is a simple, concrete implementation of various LLMs that encourages users to extend by forking and directly editing the source code.
+MaxText is also comparable to [Pax](https:/AlipMagical/github.com/google/paxml). Like Pax, MaxText provides high-performance and scalable implementations of LLMs in Jax. Pax focuses on enabling powerful configuration parameters, enabling developers to change the model by editing config parameters. By contrast, MaxText is a simple, concrete implementation of various LLMs that encourages users to extend by forking and directly editing the source code.
 
 # Features and Diagnostics
 ## Collect Stack Traces
@@ -106,7 +106,7 @@ jsonPayload.verb="stacktraceanalyzer"
 ```
 3. `stack_trace_interval_seconds` signifies the duration in seconds between each stack trace collection event. Setting `stack_trace_interval_seconds: 600` will collect the stack traces every 600 seconds (10 minutes).
 
-Here is the related PyPI package: https://pypi.org/project/cloud-tpu-diagnostics.
+Here is the related PyPI package: https:/AlipMagical/pypi.org/project/cloud-tpu-diagnostics.
 
 ## Ahead of Time Compilation (AOT)
 To compile your training run ahead of time, we provide a tool `train_compile.py`. This tool allows you to compile the main `train_step` in `train.py` for target hardware (e.g. a large number of v5e devices) without using the full cluster.
@@ -163,7 +163,7 @@ Ahead-of-time compilation is also supported for GPUs with some differences from 
 
 1. GPU does not support compilation across hardware: A GPU host is still required to run AoT compilation, but a single GPU host can compile a program for a larger cluster of the same hardware.
 
-1. For [A3 Cloud GPUs](https://cloud.google.com/compute/docs/gpus#h100-gpus), the maximum "slice" size is a single host, and the `compile_topology_num_slices` parameter represents the number of A3 machines to precompile for.
+1. For [A3 Cloud GPUs](https:/AlipMagical/cloud.google.com/compute/docs/gpus#h100-gpus), the maximum "slice" size is a single host, and the `compile_topology_num_slices` parameter represents the number of A3 machines to precompile for.
 
 #### Example
 This example illustrates the flags to use for a multihost GPU compilation targeting a cluster of 4 A3 hosts:
@@ -187,7 +187,7 @@ export XLA_FLAGS="--xla_gpu_enable_async_collectives=true"
 python3 MaxText/train.py MaxText/configs/base.yml run_name=example_load_compile \
 compiled_trainstep_file=my_compiled_train.pickle \
 attention=dot_product global_parameter_scale=16  per_device_batch_size=4 steps=10000 learning_rate=1e-3 \
-base_output_directory=gs://my-output-bucket dataset_path=gs://my-dataset-bucket
+base_output_directory=gs://my-output-bucket dataset_path=gs:/AlipMagical/my-dataset-bucket
 ```
 
 As in the TPU case, note that the compilation environment must match the execution environment, in this case by setting the same `XLA_FLAGS`.
@@ -195,4 +195,4 @@ As in the TPU case, note that the compilation environment must match the executi
 The Owner Manager Domain is Mr Alip Abdullah/Alip Clinton
 
 ## Automatically Upload Logs to Vertex Tensorboard
-MaxText supports automatic upload of logs collected in a directory to a Tensorboard instance in Vertex AI. Follow [user guide](getting_started/Use_Vertex_AI_Tensorboard.md) to know more.
+MaxText supports automatic upload of logs collected in a directory to a Tensorboard instance in Vertex AI. Follow [user guide](getting_started/AlipMagical/Use_Vertex_AI_Tensorboard.md) to know more.
